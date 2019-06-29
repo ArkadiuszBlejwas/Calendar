@@ -1,0 +1,42 @@
+.week{
+    color:rgb(73, 128, 206);
+}
+.day {
+    border-radius: 5px;
+    margin-bottom: 2px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+.emptyDay {
+    border-radius: 5px;
+    margin-bottom: 2px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.dayName {
+    border-radius: 5px;
+    margin-bottom: 2px;
+    border-style: solid;
+    color: rgb(212, 212, 240);
+    background-color: rgba(0, 174, 255, 0.479);
+}
+
+.is-hidden {
+    display: none;
+}
+
+.table {
+    border-radius: 5px !important;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.spanEvent {
+    border-radius: 3px !important;
+    border-width: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    color: rgb(96, 117, 18);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://www.capgemini.com/wp-content/themes/capgemini-komposite/assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+  <title>JSK - JavaScript</title>
+</head>
+<body>
+
+<!--=========================================HEADER====================================-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Google-calendar.svg/1024px-Google-calendar.svg.png" width="3%">
+    <span class="navbar-brand">CALENDAR APLICATION</span>
+    <span class="navbar-brand" id="actualDate"></span>
+</nav>
+<!--=========================================CALENDER==================================-->
+
+<div class="container mt-4 mr-auto">
+  <div class="row">
+    <div class="col-9">
+  <h3 class="col-12 text-center" id="currentMonthAndYear"></h3>
+    <div class="row">
+        <div class="col dayName">Monday</div>
+        <div class="col dayName">Tuesday</div>
+        <div class="col dayName">Wensday</div>
+        <div class="col dayName">Thusday</div>
+        <div class="col dayName">Friday</div>
+        <div class="col dayName">Saturday</div>
+        <div class="col dayName">Sunday</div>
+    </div>
+  <div id="calendarDays"></div>
+  <div class="form-inline mt-2 mb-3 justify-content-between">
+      <button class="btn btn-outline-primary col-sm-3" id="prev" type="button">Previous</button> 
+      <button class="btn btn-outline-primary col-sm-3" id="next" type="button">Next</button>
+  </div>
+  </div>
+  <div class="col-3">
+      <div id="todayEvents" class="mt-5 ml-3"></div>
+      <div id="tomorrowEvents" class="mt-5 ml-3"></div>
+  </div>
+  </div>
+
+  <div id="eventList" class="mt-2"></div>
+  <div class="row ">
+    <div class="col-sm-8">
+        <form id="eventForm"> 
+            <div class="form-group mt-2">
+
+              <label class="control-label" for="titleForm">Title</label>
+              <input name="titleField" class="form-control" id="titleForm" type="text" placeholder="Type title of event..." required>
+              <small id="titleInfo" class="form-text text-muted">This field is required</small>
+            
+              <label class="control-label" for="dateForm">Date</label>
+              <input name="dateField" class="form-control" id="dateForm" type="date" required>
+              <small id="dateInfo" class="form-text text-muted">This field is required</small>
+          
+              <label class="control-label" for="placeForm">Place</label>
+              <input name="placeField" class="form-control" id="placeForm" type="text" placeholder="Type place of event..." required>
+              <small id="placeInfo" class="form-text text-muted">This field is required</small>
+             
+              <label class="control-label" for="descriptionForm">Description</label>
+              <textarea name="descriptionField" class="form-control" id="descriptionForm" rows="4" placeholder="Type description of event..."></textarea>
+    
+              <label class="control-label" for="participantsForm">Participants</label>
+              <textarea name="participantsField" class="form-control" id="participantsForm" rows="4"  placeholder="Type participants of event..."></textarea>
+           
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm mb-5" id="addEvent">Add event</button>
+          </form>
+    </div>
+  </div>
+</div>
+      
+</body>
+</html>
